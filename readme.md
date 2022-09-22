@@ -1,5 +1,4 @@
 # Índice hash
-![Tela do navegador com o projeto](tela.png "Projeto rodando no chrome")
 
 ## geral
 * Criar estruturas (páginas, buckets, etc.) de acordo com o input do usuário
