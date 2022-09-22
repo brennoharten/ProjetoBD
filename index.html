@@ -13,7 +13,17 @@
     <div id="content">
 
         <div id="container">
+            <h1 class="TitleForm">índice hash estático</h1>
+            <br>
             <div class="settings-container">
+                
+                <div class="form-container">
+                    <h1 class="SubtitleForm" >Escolha um arquivo txt de palavras</h1>
+                    <br>
+                    <label>Arquivo .txt:</label>
+                    <input type="file" onchange="loadFile(this.files[0])" id="data">
+                </div>
+
                 <div class="form-container">
                     <label>Quantidade de tuplas por página:</label>
                     <input type="number" name="pageLength" onblur="checkPageQuantity(this)" id="pageLength">
@@ -34,10 +44,6 @@
                     <input type="number" name="bucketNumber" id="bucketQuantity">
                 </div>
 
-                <div class="form-container">
-                    <label>Arquivo .txt:</label>
-                    <input type="file" onchange="loadFile(this.files[0])" id="data">
-                </div>
 
                 <div class="submit-button">
                     <button onclick="iniciarBanco(

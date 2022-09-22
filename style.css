@@ -17,7 +17,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -32,7 +32,9 @@ ol, ul {
 }
 
 body {
-    background: #EEE;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,9 +47,9 @@ body {
 
 input {
     padding: 6px;
-    border-radius: 3px;
+    border-radius: 4px;
     outline: none;
-    border: 1px solid #0084ff !important;
+    border: 1.5px solid #c5c5c5 !important;
 }
 
 input[type = file] {
@@ -56,8 +58,8 @@ input[type = file] {
 #container {
     margin-bottom: 12px;
     background-color: #ffffffe2;
-    padding: 13px;
-    border-radius: 3px;
+    padding: 30px;
+    border-radius: 10px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
     -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
     box-shadow: rgba(251, 0, 255, 0.3) 0 1px 3px;
@@ -73,6 +75,15 @@ input[type = file] {
     -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
     box-shadow: rgba(251, 0, 255, 0.3) 0 1px 3px;
     width: 670px;
+}
+
+.TitleForm{
+    font-size: 30px;
+    text-align: center;
+}
+.SubtitleForm{
+    color: black;
+    font-size: 20px;
 }
 
 .settings-container {
